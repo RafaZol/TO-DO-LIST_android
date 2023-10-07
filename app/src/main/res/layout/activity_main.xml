@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/tfAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="4"
+            android:ems="10"
+            android:hint="Adicionar Novo Item"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/material_dynamic_neutral_variant10"
+            android:textColorHint="@color/design_default_color_surface"
+            android:textColorLink="@color/material_dynamic_neutral10" />
+
+        <Button
+            android:id="@+id/btAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adicionar"
+            app:backgroundTint="@android:color/holo_blue_bright" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ltAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/black"
+        android:cacheColorHint="@color/black"
+        android:listSelector="@color/material_dynamic_primary50" />
+</LinearLayout>
